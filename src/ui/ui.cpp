@@ -187,7 +187,6 @@ void ui_update(struct update_data d)
     lv_label_set_text_fmt(speed, "%02dkm/h", (int)(d.speed + 0.5));
     lv_label_set_text_fmt(tempFET, "FET: %02d.%02d°C", (int)d.tempFET, (int)((d.tempFET - (int)d.tempFET) * 100.0));
     lv_label_set_text_fmt(tempMotor, "MTR: %02d.%02d°C", (int)d.tempMTR, (int)((d.tempMTR - (int)d.tempMTR) * 100.0));
-    // lv_label_set_text_fmt(duty, "%02d%%", (int)((d.duty - (int)d.duty) * 100.0));
     lv_label_set_text_fmt(duty, "%02d%%", (int)(d.duty * 100.0 + 0.5));
     lv_label_set_text_fmt(tacho, "%d", (int)d.tacho, (int)((d.tacho - (int)d.tacho) * 100.0));
     lv_label_set_text_fmt(ampHours, "%02d.%02dAh", (int)d.ampHours, (int)((d.ampHours - (int)d.ampHours) * 100.0));
