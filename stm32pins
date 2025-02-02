@@ -1,0 +1,17 @@
+SPI1:
+    MOSI: PA7
+    MISO: PA6
+    SCLK: PA5
+    CS:   PA4
+
+UART1:
+    RX: PA10
+    TX: PA9
+
+UART2:
+    RX: PA3
+    TX: PA2
+
+KEY:
+    PIN: PA0
+    
